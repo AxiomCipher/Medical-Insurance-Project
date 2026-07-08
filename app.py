@@ -4,7 +4,7 @@ import pandas as pd
 import joblib
 
 # Load Model
-model = joblib.load('./models/model.pkl')
+model = joblib.load('models/model.pkl')
 
 st.title('Medical Insurance Prediction Using Random Forest')
 st.markdown("""
