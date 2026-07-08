@@ -4,15 +4,15 @@ import pandas as pd
 import joblib
 
 # Load Model
-model = joblib.load('models/model.pkl')
+model = joblib.load('./models/model.pkl')
 
-st.title('Medical Insurance Prediction')
+st.title('Medical Insurance Prediction Using Random Forest')
 st.markdown("""
     In order to predict your medical insurance cost, enter your information and click on "Predict Insurance Cost"
 """)
 
-st.sidebar.title('Medical Prediction')
-st.sidebar.write('Enter your details')
+st.title('Medical Prediction')
+st.write('Enter your details')
 
 age = st.number_input(
     'Age',
