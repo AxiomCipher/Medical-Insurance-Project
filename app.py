@@ -6,46 +6,46 @@ import joblib
 # Load Model
 model = joblib.load('models/model.pkl')
 
-st.title('Medical Insurance Prediction Using Random Forest')
+st.title('Medical Insurance Prediction')
 st.markdown("""
-    In order to predict your medical insurance cost, enter your information and click on "Predict"
+    In order to predict your medical insurance cost, enter your information and click on "Predict Insurance Cost"
 """)
 
-st.sidebar.title('Medeical Prediction')
+st.sidebar.title('Medical Prediction')
 st.sidebar.write('Enter your details')
 
-age = st.sidebar.number_input(
+age = st.number_input(
     'Age',
     min_value=18,
     max_value=90,
     value=20
 )
 
-sex = st.sidebar.selectbox(
+sex = st.selectbox(
     'Gender',
     ['male', 'female']
 )
 
-bmi = st.sidebar.number_input(
+bmi = st.number_input(
     'BMI',
     min_value=8,
     max_value=90,
     value=10
 )
 
-children = st.sidebar.number_input(
+children = st..number_input(
     'Number of Children',
     min_value=0,
     max_value=10,
     value=2
 )
 
-smoker = st.sidebar.selectbox(
+smoker = st..selectbox(
     'Smoking Status',
     ['yes', 'no']
 )
 
-region = st.sidebar.selectbox(
+region = st.selectbox(
     'Region',
     ['southwest', 'southeast', 'northwest', 'northeast']
 )
