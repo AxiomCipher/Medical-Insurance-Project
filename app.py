@@ -33,14 +33,14 @@ bmi = st.number_input(
     value=10
 )
 
-children = st..number_input(
+children = st.number_input(
     'Number of Children',
     min_value=0,
     max_value=10,
     value=2
 )
 
-smoker = st..selectbox(
+smoker = st.selectbox(
     'Smoking Status',
     ['yes', 'no']
 )
